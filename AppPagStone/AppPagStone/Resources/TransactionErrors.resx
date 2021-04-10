@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="c1000" xml:space="preserve">
+    <value>Não aprovado</value>
+    <comment>Do not honour</comment>
+  </data>
+  <data name="c1001" xml:space="preserve">
+    <value>Cartão vencido</value>
+    <comment>Expired card</comment>
+  </data>
+  <data name="c1002" xml:space="preserve">
+    <value>Suspeita de fraude</value>
+    <comment>Suspected fraud</comment>
+  </data>
+  <data name="c1003" xml:space="preserve">
+    <value>Estabelecimento entrar em contato com emissor</value>
+    <comment>Card acceptor contact acquirer</comment>
+  </data>
+  <data name="c1004" xml:space="preserve">
+    <value>Cartão com restrição</value>
+    <comment>Restricted card</comment>
+  </data>
+  <data name="c1005" xml:space="preserve">
+    <value>Estabelecimento entrar em contato com departamento de segurança do adquirente</value>
+    <comment>Card acceptor call acquirer's security department</comment>
+  </data>
+  <data name="c1006" xml:space="preserve">
+    <value>Tentativas de senha excedidas</value>
+    <comment>Allowable PIN tries exceeded</comment>
+  </data>
+  <data name="c1007" xml:space="preserve">
+    <value>Consultar o emissor</value>
+    <comment>Refer to card issuer</comment>
+  </data>
+  <data name="c1008" xml:space="preserve">
+    <value>Consultar as condições especiais do emissor</value>
+    <comment>Refer to card issuer's special conditions</comment>
+  </data>
+  <data name="c1009" xml:space="preserve">
+    <value>Estabelecimento inválido</value>
+    <comment>Invalid card acceptor</comment>
+  </data>
+  <data name="c1010" xml:space="preserve">
+    <value>Valor inválido</value>
+    <comment>Invalid amount</comment>
+  </data>
+  <data name="c1011" xml:space="preserve">
+    <value>Invalid card number</value>
+    <comment>Cartão inválido</comment>
+  </data>
+  <data name="c1012" xml:space="preserve">
+    <value>Senha necessária</value>
+    <comment>PIN data required</comment>
+  </data>
+  <data name="c1014" xml:space="preserve">
+    <value>Nenhuma conta do tipo selecionado</value>
+    <comment>No account of type requested</comment>
+  </data>
+  <data name="c1015" xml:space="preserve">
+    <value>Função selecionada não suportada</value>
+    <comment>Requested function not supported</comment>
+  </data>
+  <data name="c1016" xml:space="preserve">
+    <value>Saldo insuficiente</value>
+    <comment>Not sufficient funds</comment>
+  </data>
+  <data name="c1017" xml:space="preserve">
+    <value>Senha inválida</value>
+    <comment>Incorrect PIN</comment>
+  </data>
+  <data name="c1019" xml:space="preserve">
+    <value>Transação não permitida para o portador</value>
+    <comment>Transaction not permitted to cardholder</comment>
+  </data>
+  <data name="c1020" xml:space="preserve">
+    <value>Transação não permitida para o terminal</value>
+    <comment>Transaction not permitted to terminal</comment>
+  </data>
+  <data name="c1021" xml:space="preserve">
+    <value>Limite de valor para saque excedido</value>
+    <comment>Exceeds withdrawal amount limit</comment>
+  </data>
+  <data name="c1022" xml:space="preserve">
+    <value>Violação de segurança</value>
+    <comment>Security violation</comment>
+  </data>
+  <data name="c1023" xml:space="preserve">
+    <value>Limite de quantidade de saques excedido</value>
+    <comment>Exceeds withdrawal frequency limit</comment>
+  </data>
+  <data name="c1024" xml:space="preserve">
+    <value>Violação da lei</value>
+    <comment>Violation of law</comment>
+  </data>
+  <data name="c1025" xml:space="preserve">
+    <value>Cartão bloqueado</value>
+    <comment>Card not effective</comment>
+  </data>
+  <data name="c1026" xml:space="preserve">
+    <value>Dados de senha inválidos</value>
+    <comment>Invalid PIN block</comment>
+  </data>
+  <data name="c1027" xml:space="preserve">
+    <value>Erro no tamanho da senha</value>
+    <comment>PIN length error</comment>
+  </data>
+  <data name="c1028" xml:space="preserve">
+    <value>Erro de sincronia de chave de senha</value>
+    <comment>PIN key sync error</comment>
+  </data>
+  <data name="c1029" xml:space="preserve">
+    <value>Suspeita de cartão falso</value>
+    <comment>Suspected counterfeit card</comment>
+  </data>
+  <data name="c1030" xml:space="preserve">
+    <value>Moeda inaceitável para o emissor</value>
+    <comment>Currency unacceptable to card issuer</comment>
+  </data>
+  <data name="c1032" xml:space="preserve">
+    <value>Cartão perdido ou roubado</value>
+    <comment>Lost/stolen card</comment>
+  </data>
+  <data name="c1035" xml:space="preserve">
+    <value>Conta encerrada</value>
+    <comment>Closed account</comment>
+  </data>
+  <data name="c1036" xml:space="preserve">
+    <value>Conta poupança encerrada ou bloqueada para encerramento</value>
+    <comment>Closed savings account, or restricted for closing</comment>
+  </data>
+  <data name="c1037" xml:space="preserve">
+    <value>Conta de crédito encerrada ou bloqueada para encerramento</value>
+    <comment>Closed credit account or restricted for closing</comment>
+  </data>
+  <data name="c1039" xml:space="preserve">
+    <value>Conta corrente encerrada ou bloquada para encerramento</value>
+    <comment>Closed cheque account or restricted for closing</comment>
+  </data>
+  <data name="c1041" xml:space="preserve">
+    <value>Status ruim para conta de origem</value>
+    <comment>From account bad status</comment>
+  </data>
+  <data name="c1042" xml:space="preserve">
+    <value>Status ruim para conta de destino</value>
+    <comment>To account bad status</comment>
+  </data>
+  <data name="c1045" xml:space="preserve">
+    <value>Código de segurança inválido</value>
+    <comment>Card verification data failed</comment>
+  </data>
+  <data name="c1047" xml:space="preserve">
+    <value>Troca de senha necessária</value>
+    <comment>PIN change required</comment>
+  </data>
+  <data name="c1048" xml:space="preserve">
+    <value>Nova senha inválida</value>
+    <comment>New PIN invalid</comment>
+  </data>
+  <data name="c1057" xml:space="preserve">
+    <value>Data de pagamento inválida</value>
+    <comment>Payment date invalid</comment>
+  </data>
+  <data name="c1060" xml:space="preserve">
+    <value>Transação não completou normalmente no terminal</value>
+    <comment>Transaction did not complete normally at terminal</comment>
+  </data>
+  <data name="c1061" xml:space="preserve">
+    <value>Transação não suportada pelo emissor</value>
+    <comment>Transaction not supported by the card issuer</comment>
+  </data>
+  <data name="c1062" xml:space="preserve">
+    <value>Saque fácil não disponível</value>
+    <comment>Cashback not allowed</comment>
+  </data>
+  <data name="c1063" xml:space="preserve">
+    <value>Limite de saque fácil excedido</value>
+    <comment>Cashback amount exceeded</comment>
+  </data>
+  <data name="c1064" xml:space="preserve">
+    <value>Negado offline pelo terminal</value>
+    <comment>Declined, transaction processed offline by terminal</comment>
+  </data>
+  <data name="c1065" xml:space="preserve">
+    <value>Negado, não foi possível processar offline</value>
+    <comment>Declined, terminal unable to process offline</comment>
+  </data>
+  <data name="c2000" xml:space="preserve">
+    <value>Não aprovado</value>
+    <comment>Do not honour</comment>
+  </data>
+  <data name="c2001" xml:space="preserve">
+    <value>Cartão vencido</value>
+    <comment>Expired card</comment>
+  </data>
+  <data name="c2002" xml:space="preserve">
+    <value>Suspeita de fraude</value>
+    <comment>Suspected fraud</comment>
+  </data>
+  <data name="c2003" xml:space="preserve">
+    <value>Estabelecimento entrar em contato com emissor</value>
+    <comment>Card acceptor contact acquirer</comment>
+  </data>
+  <data name="c2004" xml:space="preserve">
+    <value>Cartão com restrição</value>
+    <comment>Restricted card</comment>
+  </data>
+  <data name="c2005" xml:space="preserve">
+    <value>Estabelecimento entrar em contato com departamento de segurança do adquirente</value>
+    <comment>Card acceptor call acquirer's security department</comment>
+  </data>
+  <data name="c2006" xml:space="preserve">
+    <value>Tentativas de senha excedidas</value>
+    <comment>Allowable PIN tries exceeded</comment>
+  </data>
+  <data name="c2007" xml:space="preserve">
+    <value>Condições especiais</value>
+    <comment>Special conditions</comment>
+  </data>
+  <data name="c2008" xml:space="preserve">
+    <value>Cartão perdido</value>
+    <comment>Lost card</comment>
+  </data>
+  <data name="c2009" xml:space="preserve">
+    <value>Cartão roubado</value>
+    <comment>Stolen card</comment>
+  </data>
+  <data name="c2010" xml:space="preserve">
+    <value>Suspeita de cartão falso</value>
+    <comment>Suspected counterfeit card</comment>
+  </data>
+  <data name="c2011" xml:space="preserve">
+    <value>Limite de quantidade de saques excedido</value>
+    <comment>Daily withdrawal uses exceeded</comment>
+  </data>
+  <data name="c2012" xml:space="preserve">
+    <value>Limite de valor para saque excedido</value>
+    <comment>Daily withdrawal amount exceeded</comment>
+  </data>
+  <data name="c9100" xml:space="preserve">
+    <value>Erro no formato da mensagem</value>
+    <comment>One or more data element errors (see message error indicator)</comment>
+  </data>
+  <data name="c9102" xml:space="preserve">
+    <value>Transação inválida</value>
+    <comment>Invalid transaction</comment>
+  </data>
+  <data name="c9103" xml:space="preserve">
+    <value>Tente novamente</value>
+    <comment>Re-enter transaction</comment>
+  </data>
+  <data name="c9105" xml:space="preserve">
+    <value>Adquirente não suportado pelo switch</value>
+    <comment>Acquirer not supported by switch</comment>
+  </data>
+  <data name="c9107" xml:space="preserve">
+    <value>Emissor fora de operação</value>
+    <comment>Card issuer or switch inoperative</comment>
+  </data>
+  <data name="c9108" xml:space="preserve">
+    <value>Não foi possível enviar a transação para o destinatário</value>
+    <comment>Transaction destination cannot be found for routing</comment>
+  </data>
+  <data name="c9109" xml:space="preserve">
+    <value>Erro no sistema</value>
+    <comment>System malfunction</comment>
+  </data>
+  <data name="c9110" xml:space="preserve">
+    <value>Emissor se desconectou</value>
+    <comment>Card issuer signed off</comment>
+  </data>
+  <data name="c9111" xml:space="preserve">
+    <value>Emissor não respondeu em tempo</value>
+    <comment>Card issuer timed out</comment>
+  </data>
+  <data name="c9112" xml:space="preserve">
+    <value>Emissor indisponível</value>
+    <comment>Card issuer unavailable</comment>
+  </data>
+  <data name="c9113" xml:space="preserve">
+    <value>Transmissão duplicada</value>
+    <comment>Duplicate transmission</comment>
+  </data>
+  <data name="c9114" xml:space="preserve">
+    <value>Não foi possível encontrar a transação original</value>
+    <comment>Not able to trace back to original transaction</comment>
+  </data>
+  <data name="c9116" xml:space="preserve">
+    <value>MAC incorreto</value>
+    <comment>MAC incorrect</comment>
+  </data>
+  <data name="c9117" xml:space="preserve">
+    <value>Erro de sincronização de chave de MAC</value>
+    <comment>MAC key sync error</comment>
+  </data>
+  <data name="c9118" xml:space="preserve">
+    <value>Nenhuma chave de comunicação disponível</value>
+    <comment>No communication keys available for use</comment>
+  </data>
+  <data name="c9119" xml:space="preserve">
+    <value>Erro de sincronização de chave de encriptação</value>
+    <comment>Encryption key sync error</comment>
+  </data>
+  <data name="c9120" xml:space="preserve">
+    <value>Erro de segurança de software/hardware, tente novamente</value>
+    <comment>Security software/hardware error – try again</comment>
+  </data>
+  <data name="c9121" xml:space="preserve">
+    <value>Erro de segurança de software/hardware</value>
+    <comment>Security software/hardware error – no action</comment>
+  </data>
+  <data name="c9122" xml:space="preserve">
+    <value>Número da mensagem fora de sequência</value>
+    <comment>Message number out of sequence</comment>
+  </data>
+  <data name="c9123" xml:space="preserve">
+    <value>Requisição em progresso</value>
+    <comment>Request in progress</comment>
+  </data>
+  <data name="c9124" xml:space="preserve">
+    <value>Código de segurança inválido</value>
+    <comment>Invalid security code</comment>
+  </data>
+  <data name="c9125" xml:space="preserve">
+    <value>Erro no banco de dados</value>
+    <comment>Database error</comment>
+  </data>
+  <data name="c9132" xml:space="preserve">
+    <value>Erro nos dados de recorrência</value>
+    <comment>Recurring data error</comment>
+  </data>
+  <data name="c9133" xml:space="preserve">
+    <value>Atualização não permitida</value>
+    <comment>Update not allowed</comment>
+  </data>
+  <data name="c9350" xml:space="preserve">
+    <value>Violação de acordo comercial</value>
+    <comment>Violation of business arrangement</comment>
+  </data>
+  <data name="c9999" xml:space="preserve">
+    <value>Erro não especificado</value>
+    <comment>Other errors</comment>
+  </data>
+  <data name="c999" xml:space="preserve">
+    <value>Falha ao enviar a transação, tente novamente.</value>
+  </data>
+  <data name="c400" xml:space="preserve">
+    <value>Algum campo obrigatório não foi enviado ou foi enviado de maneira incorreta</value>
+    <comment>Bad Request</comment>
+  </data>
+</root>

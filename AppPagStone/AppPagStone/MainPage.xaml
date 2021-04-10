@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPagStone.MainPage"
+             xmlns:local="clr-namespace:AppPagStone.Helpers"
+             Title="Stone - Pagamento">
+
+    <ScrollView>
+        <Grid RowSpacing="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackLayout VerticalOptions="Center" Grid.Row="0"
+                         Padding="20">
+                <Label Text="{Binding Bandeira}"
+                   TextColor="Blue"
+                   FontAttributes="Bold"
+                   FontSize="16"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="CenterAndExpand"/>
+                <Entry Placeholder="Número do cartão"
+                   PlaceholderColor="Gray"
+                   Text="{Binding NumeroCartao}"
+                   HorizontalTextAlignment="Center"
+                   Keyboard="Numeric">
+                    <Entry.Behaviors>
+                        <local:BehaviorValidatorEntryMask MaxLength="16"/>
+                    </Entry.Behaviors>
+                </Entry>
+                <Entry Placeholder="Data de validade MM/AAAA"
+                   PlaceholderColor="Gray"
+                   Text="{Binding Validade}"
+                   HorizontalTextAlignment="Center"
+                   Keyboard="Numeric">
+                    <Entry.Behaviors>
+                        <local:BehaviorValidatorEntryMask MaxLength="7" Tipo="DataValidadeCartaoCredito"/>
+                    </Entry.Behaviors>
+                </Entry>
+                <Entry Placeholder="Código de segurança (CVV)"
+                   PlaceholderColor="Gray"
+                   Text="{Binding CVV}"
+                   HorizontalTextAlignment="Center"
+                   Keyboard="Numeric">
+                    <Entry.Behaviors>
+                        <local:BehaviorValidatorEntryMask MaxLength="3"/>
+                    </Entry.Behaviors>
+                </Entry>
+                <Entry Placeholder="Nome do titular"
+                   PlaceholderColor="Gray"
+                   Text="{Binding Titular}"
+                   HorizontalTextAlignment="Center">
+                    <Entry.Behaviors>
+                        <local:BehaviorValidatorEntryMask MaxLength="50" Tipo="TitleCase"/>
+                    </Entry.Behaviors>
+                </Entry>
+                <Entry Placeholder="Valor da venda: 0,00"
+                   PlaceholderColor="Gray"
+                   Text="{Binding ValorVenda}"
+                   HorizontalTextAlignment="Center"
+                   Keyboard="Numeric">
+                    <Entry.Behaviors>
+                        <local:BehaviorValidatorEntryMask Tipo="Decimal"/>
+                    </Entry.Behaviors>
+                </Entry>
+                <Entry Placeholder="Número de parcelas"
+                   PlaceholderColor="Gray"
+                   Text="{Binding NumeroParcelas}"
+                   HorizontalTextAlignment="Center"
+                   Keyboard="Numeric">
+                    <Entry.Behaviors>
+                        <local:BehaviorValidatorEntryMask Tipo="Numeric"/>
+                    </Entry.Behaviors>
+                </Entry>
+                <Label Text="{Binding MensagemTransacao}"
+                   TextColor="Red"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="10"/>
+                <Label Text="{Binding Token}"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="10"/>
+                <Label Text="{Binding MensagemSplit}"
+                   TextColor="Red"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="10"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1">
+                <Button Text="Gerar Token"
+                        Command="{Binding GerarTokenCommand}"/>
+            </StackLayout>
+            <StackLayout Grid.Row="2">
+                <Button Text="Cadastrar Recipiente"
+                        Command="{Binding CadastrarRecipienteCommand}"/>
+            </StackLayout>
+            <StackLayout Grid.Row="3">
+                <Button Text="Enviar Transação (Venda)"
+                        Command="{Binding EnviarTransacaoCommand}"/>
+            </StackLayout>
+            <StackLayout Grid.Row="4">
+                <Button Text="Consultar Split"
+                        Command="{Binding ConsultarSplitCommand}"/>
+            </StackLayout>
+            <StackLayout Grid.Row="5">
+                <Button Text="Cancelar Split"
+                        Command="{Binding CancelarSplitCommand}"/>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>
